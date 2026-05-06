@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      formMessage.textContent = "Message looks good. This demo form is ready for a real form service later.";
+      formMessage.textContent = "Message looks good. Please contact me directly by email.";
       formMessage.classList.add("success");
       contactForm.reset();
     });
