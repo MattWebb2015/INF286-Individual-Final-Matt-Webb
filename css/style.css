@@ -334,32 +334,81 @@ p {
 
 .about-layout {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
-  gap: 1rem;
-  align-items: start;
+  grid-template-columns: minmax(360px, 0.95fr) minmax(320px, 1.05fr);
+  gap: 2rem;
+  align-items: stretch;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.profile-panel,
+.quick-facts {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
 }
 
 .profile-panel {
-  padding: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
-.avatar-placeholder {
-  display: grid;
-  place-items: center;
-  width: 9rem;
-  height: 9rem;
-  margin: 0 auto 1rem;
-  border-radius: 2rem;
-  color: #ffffff;
-  background: var(--dark-blue);
-  font-size: 2.4rem;
-  font-weight: 900;
+.profile-panel h2,
+.quick-facts h2 {
+  margin-top: 0;
 }
 
-.stacked-content {
+.profile-panel p {
+  max-width: 65ch;
+}
+
+.quick-facts dl {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
+  margin: 0;
+}
+
+.quick-facts div {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.quick-facts div:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.quick-facts dt {
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.quick-facts dd {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.split-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.stacked-cards {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.stacked-cards .info-card {
+  margin: 0;
 }
 
 .wide-card {
@@ -578,8 +627,19 @@ textarea {
   .split-intro,
   .project-intro,
   .about-layout,
+  .split-section,
   .contact-layout {
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  }
+
+  .about-layout,
+  .split-section {
+  padding: 2rem 0;
+  }
+
+  .profile-panel,
+  .quick-facts {
+  padding: 1.5rem;
   }
 
   .three-columns,
