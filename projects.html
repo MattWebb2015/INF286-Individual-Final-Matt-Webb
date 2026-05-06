@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Matthew Webb</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Matthew Webb home">
+      <span>Matthew Webb</span>
+      <small>Systems • Code • Ideas</small>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro project-intro">
+      <div>
+        <p class="eyebrow">Projects & Interests</p>
+        <h1>Selected work and technical interests.</h1>
+      </div>
+      <p>Use the filters below to sort the project cards. This gives the page an interactive JavaScript feature while keeping the design clean.</p>
+    </section>
+
+    <section class="filter-section" aria-label="Project filters">
+      <button class="filter-button active" data-filter="all">All</button>
+      <button class="filter-button" data-filter="web">Web</button>
+      <button class="filter-button" data-filter="python">Python</button>
+      <button class="filter-button" data-filter="java">Java</button>
+      <button class="filter-button" data-filter="systems">Systems</button>
+    </section>
+
+    <section class="project-grid">
+      <article class="project-card" data-category="web">
+        <p class="project-type">Web</p>
+        <h2>Personal Portfolio Website</h2>
+        <p>A five-page responsive website built with HTML, CSS, and JavaScript to present my background, skills, and projects.</p>
+      </article>
+      <article class="project-card" data-category="web">
+        <p class="project-type">Web</p>
+        <h2>Website Redesign Project</h2>
+        <p>A class project focused on improving usability, readability, navigation, and responsive layout for an existing website.</p>
+      </article>
+      <article class="project-card" data-category="python systems">
+        <p class="project-type">Python / Systems</p>
+        <h2>Floorplan Coordinate Conversion</h2>
+        <p>Project work involving affine transformations to connect live floorplan data with GPS coordinate systems for app features.</p>
+      </article>
+      <article class="project-card" data-category="java">
+        <p class="project-type">Java</p>
+        <h2>Breakout-Style Game Project</h2>
+        <p>A Java GUI game project involving object movement, collision behavior, interface updates, and organized class design.</p>
+      </article>
+      <article class="project-card" data-category="systems">
+        <p class="project-type">Systems</p>
+        <h2>Problem-Solving Practice</h2>
+        <p>Ongoing work with logic, discrete mathematics, programming structure, and system-level thinking.</p>
+      </article>
+      <article class="project-card" data-category="web python">
+        <p class="project-type">Web / Python</p>
+        <h2>Future Portfolio Additions</h2>
+        <p>Planned additions include more detailed project writeups, screenshots, GitHub links, and examples of completed assignments.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Matthew Webb. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+</body>
+</html>
