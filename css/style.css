@@ -679,3 +679,59 @@ textarea {
     border-radius: 1rem;
   }
 }
+/* About page layout cleanup */
+.about-page main {
+  width: min(960px, calc(100% - 2rem));
+}
+
+.about-page .page-intro {
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 3rem 0 1rem;
+}
+
+.about-page .page-intro h1 {
+  font-size: clamp(2rem, 4.5vw, 3.7rem);
+}
+
+.about-page .about-layout {
+  max-width: 860px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr);
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.about-page .profile-panel,
+.about-page .quick-facts {
+  padding: 1.75rem;
+}
+
+.about-page .split-section {
+  max-width: 860px;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.about-page .stacked-cards {
+  gap: 1rem;
+}
+
+.about-page .stacked-cards .info-card {
+  padding: 1.25rem 1.4rem;
+}
+
+@media (max-width: 850px) {
+  .about-page main {
+    width: min(100% - 1.25rem, 960px);
+  }
+
+  .about-page .about-layout,
+  .about-page .split-section {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .page-intro h1 {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+}
